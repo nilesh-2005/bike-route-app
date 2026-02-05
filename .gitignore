@@ -13,3 +13,7 @@ data/
 # OS
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+*_log.txt
