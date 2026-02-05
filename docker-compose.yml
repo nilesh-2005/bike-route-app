@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+      - graph-cache:/app/graph-cache
+    environment:
+      - GRAPHHOPPER_OSM_PATH=/app/data/india-latest.osm.pbf
+      - GRAPHHOPPER_GRAPH_LOCATION=/app/graph-cache
+      - JAVA_OPTS=-Xms4g -Xmx10g
+    networks:
+      - bike-net
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - bike-net
+    environment:
+      - VITE_API_URL=http://localhost:8080
+
+  postgis:
+    image: postgis/postgis:16-3.4
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=bikeroute
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - bike-net
+
+volumes:
+  graph-cache:
+  postgres-data:
+
+
+networks:
+  bike-net:

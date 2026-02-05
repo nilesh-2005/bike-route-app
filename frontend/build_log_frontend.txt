@@ -1,0 +1,30 @@
+
+> frontend@0.0.0 build
+> tsc -b && vite build
+
+src/components/MapComponent.tsx(2,38): error TS2614: Module '"react-map-gl"' has no exported member 'MapRef'. Did you mean to use 'import MapRef from "react-map-gl"' instead?
+src/components/MapComponent.tsx(41,13): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: InteractiveMapProps): InteractiveMap', gave the following error.
+    Type '(e: maplibregl.MapLayerMouseEvent) => void' is not assignable to type '(event: PointerEvent) => void'.
+      Types of parameters 'e' and 'event' are incompatible.
+        Type 'PointerEvent' is not assignable to type 'MapLayerMouseEvent'.
+          Type 'PointerEvent' is missing the following properties from type 'MapMouseEvent': originalEvent, _defaultPrevented
+  Overload 2 of 2, '(props: InteractiveMapProps, context: any): InteractiveMap', gave the following error.
+    Type '(e: maplibregl.MapLayerMouseEvent) => void' is not assignable to type '(event: PointerEvent) => void'.
+      Types of parameters 'e' and 'event' are incompatible.
+        Type 'PointerEvent' is not assignable to type 'MapLayerMouseEvent'.
+          Type 'PointerEvent' is missing the following properties from type 'MapMouseEvent': originalEvent, _defaultPrevented
+src/components/MapComponent.tsx(45,66): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: MarkerProps): Marker', gave the following error.
+    Type '{ longitude: number; latitude: number; color: string; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Marker> & Readonly<MarkerProps>'.
+      Property 'color' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Marker> & Readonly<MarkerProps>'.
+  Overload 2 of 2, '(props: MarkerProps, context: any): Marker', gave the following error.
+    Type '{ longitude: number; latitude: number; color: string; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Marker> & Readonly<MarkerProps>'.
+      Property 'color' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Marker> & Readonly<MarkerProps>'.
+src/components/MapComponent.tsx(48,62): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: MarkerProps): Marker', gave the following error.
+    Type '{ longitude: number; latitude: number; color: string; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Marker> & Readonly<MarkerProps>'.
+      Property 'color' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Marker> & Readonly<MarkerProps>'.
+  Overload 2 of 2, '(props: MarkerProps, context: any): Marker', gave the following error.
+    Type '{ longitude: number; latitude: number; color: string; }' is not assignable to type 'IntrinsicAttributes & IntrinsicClassAttributes<Marker> & Readonly<MarkerProps>'.
+      Property 'color' does not exist on type 'IntrinsicAttributes & IntrinsicClassAttributes<Marker> & Readonly<MarkerProps>'.

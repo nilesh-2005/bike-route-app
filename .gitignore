@@ -1,0 +1,15 @@
+# Java / Maven
+backend/target/
+*.log
+
+# Node
+frontend/node_modules/
+
+# Docker / Data
+graph-cache/
+data/
+.env
+
+# OS
+.DS_Store
+Thumbs.db

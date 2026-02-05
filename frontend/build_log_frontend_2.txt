@@ -1,0 +1,20 @@
+
+> frontend@0.0.0 build
+> tsc -b && vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 16 modules transformed.
+Γ£ù Build failed in 310ms
+error during build:
+[commonjs--resolver] Failed to resolve entry for package "react-map-gl". The package may have incorrect main/module/exports specified in its package.json: Missing "." specifier in "react-map-gl" package
+    at packageEntryFailure (file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/vite/dist/node/chunks/config.js:32816:32)
+    at resolvePackageEntry (file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/vite/dist/node/chunks/config.js:32811:3)
+    at tryNodeResolve (file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/vite/dist/node/chunks/config.js:32716:70)
+    at Object.handler (file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/vite/dist/node/chunks/config.js:32555:16)
+    at Object.handler (file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/vite/dist/node/chunks/config.js:33706:13)
+    at file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/rollup/dist/es/shared/node-entry.js:22548:40
+    at async PluginDriver.hookFirstAndGetPlugin (file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/rollup/dist/es/shared/node-entry.js:22430:28)
+    at async resolveId (file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/rollup/dist/es/shared/node-entry.js:20889:26)
+    at async ModuleLoader.resolveId (file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/rollup/dist/es/shared/node-entry.js:21335:15)
+    at async Object.resolveId (file:///C:/Users/frien/OneDrive/Desktop/bike-route-app/bike-route-app/frontend/node_modules/vite/dist/node/chunks/config.js:4154:21)
