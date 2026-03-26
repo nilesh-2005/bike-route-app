@@ -33,9 +33,9 @@ A full-stack application for bike routing in India using GraphHopper, Spring Boo
    The first run will take some time as GraphHopper processes the OSM file (CH/LM preparation).
 
 3. **Access the App**
-   - Frontend: [http://localhost:3000](http://localhost:3000)
-   - Backend API: [http://localhost:8080/api/route](http://localhost:8080/api/route)
-
+   - Frontend: Not Yet Deployed.
+   - Backend API: Not Yet Deployed.
+     
 ## Custom Bike Profile
 The routing logic is customized in `backend/src/main/resources/custom_bike.json`.
 It prioritizes residential and cycleways while penalizing highways and high-speed roads.
